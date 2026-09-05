@@ -1,4 +1,7 @@
 import { QrCode } from 'lucide-react';
+import appleIcon from '../assets/apple.svg';
+import heroPhones from '../assets/hero-phones.png';
+import playStoreIcon from '../assets/play-store-icon.svg';
 
 export default function BottomCTA() {
   return (
@@ -18,7 +21,7 @@ export default function BottomCTA() {
 
             <div className="cta-buttons">
               <button className="cta-download-button">
-                <img src="/src/assets/play-store-icon.svg" alt="Play Store svg" width="40" height="30" />
+                <img src={playStoreIcon} alt="Google Play" width="40" height="30" />
                 <div className="cta-download-text">
                   <div className="download-label">GET IT ON</div>
                   <div className="download-title">Google Play</div>
@@ -26,7 +29,7 @@ export default function BottomCTA() {
               </button>
 
               <button className="cta-download-button">
-                <img src="/src/assets/apple.svg" alt="apple svg" width="40" height="30"   style={{ filter: "brightness(0) invert(1)" }}/>
+                <img src={appleIcon} alt="Apple" width="40" height="30" style={{ filter: "brightness(0) invert(1)" }} />
                 <div className="cta-download-text">
                   <div className="download-label">Download on the</div>
                   <div className="download-title">App Store</div>
@@ -46,7 +49,7 @@ export default function BottomCTA() {
 
           <div className="cta-mockup">
             <div className="cta-mockup-inner"   style={{ height:"600", width:"900" }}>
-              <img src="/src/assets/hero-phones.png" alt="NROQ App Mockups" height="800" width="800" />
+              <img src={heroPhones} alt="NROQ App Mockups" height="800" width="800" />
             </div>
             {/* <svg className="cta-leaf" viewBox="0 0 100 100" fill="currentColor">
                <path d="M50 100 C 50 50, 0 50, 0 10 C 20 10, 50 30, 50 100"/>

@@ -1,4 +1,5 @@
 import { Star, Play, CheckCircle2 } from 'lucide-react';
+import heroPhones from '../assets/hero-phones.png';
 
 export default function Hero() {
   return (
@@ -96,7 +97,7 @@ export default function Hero() {
                   fill="#2563eb" />
               </svg>
             <div className="hero-mockup-card">
-              <img src="/src/assets/hero-phones.png" alt="NROQ App Screens" className="hero-mockup-img" />
+              <img src={heroPhones} alt="NROQ App Screens" className="hero-mockup-img" />
             </div>
 
             <div className="hero-mockup-chip hero-mockup-chip--top-left">
