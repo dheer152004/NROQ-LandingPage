@@ -1,0 +1,180 @@
+/* Mobile-only overrides for smaller screens */
+
+@media (max-width: 639px) {
+  body {
+    padding-top: 2rem;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-section,
+  .categories-section,
+  .features-section,
+  .story-section,
+  .steps-section,
+  .cta-section,
+  .footer-section {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .hero-layout {
+    gap: 1.5rem;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+    line-height: 1.05;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    max-width: 100%;
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-cta-group {
+    width: 100%;
+  }
+
+  .button-pill {
+    width: 100%;
+    padding: 0.95rem 1rem;
+  }
+
+  .hero-review,
+  .hero-stats {
+    justify-items: center;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .hero-stat {
+    align-items: center;
+  }
+
+  .hero-mockup {
+    display: none !important;
+  }
+
+  .cta-card {
+    min-height: auto;
+    padding: 1.75rem 1.25rem;
+  }
+
+  .cta-title {
+    font-size: 2rem;
+  }
+
+  .cta-text {
+    max-width: 100%;
+  }
+
+  .cta-buttons {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .cta-download-button {
+    width: 100%;
+  }
+
+  .categories-header {
+    margin-bottom: 2rem;
+  }
+
+  .categories-marquee {
+    overflow: hidden;
+  }
+
+  .categories-scroll {
+    display: flex;
+    gap: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+    width: max-content;
+    animation: marquee 20s linear infinite;
+  }
+
+  .category-card {
+    min-width: 18rem;
+    scroll-snap-align: center;
+  }
+
+  .category-thumb {
+    aspect-ratio: 1 / 1;
+    height: 300px;
+  }
+
+  .story-card {
+    padding: 1.5rem;
+  }
+
+  .story-blockquote {
+    font-size: 1.35rem;
+  }
+
+  .story-grid {
+    gap: 1.5rem;
+  }
+
+  .story-connector {
+    display: none;
+  }
+
+  .steps-grid {
+    gap: 1.5rem;
+  }
+
+  .step-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .step-copy {
+    max-width: none;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    padding-right: 0;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-bottom-copy {
+    justify-content: center;
+  }
+
+  .navbar-inner {
+    padding: 0 1rem;
+  }
+
+  .navbar-toggle-button {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .navbar-mobile-links {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

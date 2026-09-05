@@ -1,0 +1,6 @@
+{
+  "name": "NROQ Landing Page",
+  "description": "A responsive landing page for a vocabulary learning app.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
