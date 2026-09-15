@@ -60,13 +60,14 @@ export default function Footer() {
             <li><Link to="/privacy-policy" className="footer-link">Privacy Policy</Link></li>
             <li><Link to="/terms-of-service" className="footer-link">Terms of Service</Link></li>
             <li><Link to="/cookie-policy" className="footer-link">Cookie Policy</Link></li>
+            <li><Link to="/privacy-consent" className="footer-link">Privacy & Consent Management</Link></li>
           </ul>
         </div>
       </div>
 
       <div className="footer-bottom">
         <div className="footer-bottom-inner">
-          <p>&copy; 2024 NROQ. All rights reserved.</p>
+          <p>&copy; 2026 NROQ. All rights reserved.</p>
           <p className="footer-bottom-copy">
             Made with <Heart className="footer-heart-icon" /> for curious minds.
           </p>

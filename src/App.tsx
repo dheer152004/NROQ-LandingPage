@@ -47,6 +47,7 @@ export default function App() {
       <Route path="/community" element={<ContentPage {...pageContent.community} />} />
       <Route path="/privacy-policy" element={<ContentPage {...pageContent.privacy} />} />
       <Route path="/terms-of-service" element={<ContentPage {...pageContent.terms} />} />
+      <Route path="/privacy-consent" element={<ContentPage {...pageContent.privacyConsent} />} />
       <Route path="/cookie-policy" element={<ContentPage {...pageContent.cookies} />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="*" element={<ContentPage {...pageContent.help} />} />
