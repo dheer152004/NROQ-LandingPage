@@ -21,13 +21,13 @@ export default function Hero() {
             </p>
 
             <div className="hero-cta-group">
-              <button className="button-pill button-primary">
+              <a href="#download" className="button-pill button-primary">
                 Start Learning — It's Free
                 <svg className="button-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-              </button>
-              <button className="button-pill button-secondary">
+              </a>
+              <a href="#vocabulary" className="button-pill button-secondary">
                 Explore Vocabulary
-              </button>
+              </a>
             </div>
 
             <div className="hero-review">

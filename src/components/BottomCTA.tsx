@@ -5,7 +5,7 @@ import playStoreIcon from '../assets/play-store-icon.svg';
 
 export default function BottomCTA() {
   return (
-    <section className="cta-section">
+    <section id="download" className="cta-section">
       <div className="container">
         <div className="cta-card">
           <div className="cta-circle cta-circle--top"></div>

@@ -66,7 +66,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="features-section">
+    <section id="features" className="features-section">
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Powerful Features for Smarter Learning</h2>

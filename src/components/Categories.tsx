@@ -45,7 +45,7 @@ export default function Categories() {
   const [isPaused, setIsPaused] = useState(false);
 
   return (
-    <section className="categories-section">
+    <section id="vocabulary" className="categories-section">
       <div className="container">
         <div className="categories-header">
           <h2 className="section-title">Real-Life Vocabulary Moments</h2>

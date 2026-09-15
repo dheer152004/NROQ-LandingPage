@@ -1,6 +1,6 @@
 export default function Story() {
   return (
-    <section className="story-section">
+    <section id="story" className="story-section">
       <div className="container">
         <div className="story-card">
           <div className="story-bg"></div>

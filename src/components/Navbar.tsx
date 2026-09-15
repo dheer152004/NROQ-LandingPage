@@ -1,5 +1,6 @@
 import { Menu, X, Smartphone } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,18 +21,17 @@ export default function Navbar() {
         </div>
 
         <div className="navbar-links">
-          <a href="#" className="navbar-link">Features</a>
-          <a href="#" className="navbar-link">Vocabulary Moments</a>
-          <a href="#" className="navbar-link">How it works</a>
-          <a href="#" className="navbar-link">Pricing</a>
-          <a href="#" className="navbar-link">About</a>
+          <a href="#features" className="navbar-link">Features</a>
+          <a href="#vocabulary" className="navbar-link">Vocabulary Moments</a>
+          <a href="#how-it-works" className="navbar-link">How it works</a>
+          <Link to="/about-us" className="navbar-link">About</Link>
         </div>
 
         <div className="navbar-action">
-          <button className="button-pill button-primary navbar-button">
+          <a href="#download" className="button-pill button-primary navbar-button">
             <Smartphone className="button-icon" />
             Get the App
-          </button>
+          </a>
         </div>
 
         <div className="navbar-toggle">
@@ -44,17 +44,16 @@ export default function Navbar() {
       {isOpen && (
         <div className="navbar-mobile-menu">
           <div className="navbar-mobile-links">
-            <a href="#" className="navbar-mobile-link">Features</a>
-            <a href="#" className="navbar-mobile-link">Vocabulary Moments</a>
-            <a href="#" className="navbar-mobile-link">How it works</a>
-            <a href="#" className="navbar-mobile-link">Pricing</a>
-            <a href="#" className="navbar-mobile-link">About</a>
+            <a href="#features" className="navbar-mobile-link" onClick={() => setIsOpen(false)}>Features</a>
+            <a href="#vocabulary" className="navbar-mobile-link" onClick={() => setIsOpen(false)}>Vocabulary Moments</a>
+            <a href="#how-it-works" className="navbar-mobile-link" onClick={() => setIsOpen(false)}>How it works</a>
+            <Link to="/about-us" className="navbar-mobile-link" onClick={() => setIsOpen(false)}>About</Link>
           </div>
           <div className="navbar-mobile-action">
-            <button className="button-pill button-primary navbar-button navbar-mobile-button">
+            <a href="#download" className="button-pill button-primary navbar-button navbar-mobile-button" onClick={() => setIsOpen(false)}>
               <Smartphone className="button-icon" />
               Get the App
-            </button>
+            </a>
           </div>
         </div>
       )}

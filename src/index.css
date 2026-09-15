@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+:root {
   --font-sans: "Inter", sans-serif;
   --font-display: "Sora", sans-serif;
 }
@@ -12,6 +12,230 @@ body {
   background-color: #FAFBFF;
   font-family: var(--font-sans);
   color: #111827;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-header {
+  background: rgba(255,255,255,0.92);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.page-header-inner,
+.page-footer-inner {
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.page-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #111827;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.page-brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.75rem;
+  background: #2563eb;
+  color: #fff;
+}
+
+.page-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #475569;
+  font-weight: 600;
+}
+
+.content-page {
+  padding-top: 6rem;
+  padding-bottom: 7rem;
+}
+
+.page-eyebrow {
+  margin: 0 0 1rem;
+  color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.page-title {
+  max-width: 48rem;
+  margin: 0;
+  color: #111827;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.02;
+  font-weight: 800;
+}
+
+.page-intro {
+  max-width: 44rem;
+  margin: 1.5rem 0 0;
+  color: #4b5563;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.content-sections {
+  display: grid;
+  gap: 2rem;
+  max-width: 48rem;
+  margin-top: 4rem;
+}
+
+.content-section {
+  padding-top: 2rem;
+  border-top: 1px solid #dbe3ef;
+}
+
+.content-section h2 {
+  margin: 0 0 0.75rem;
+  color: #111827;
+  font-size: 1.4rem;
+}
+
+.content-section p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+.contact-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.8fr);
+  gap: 5rem;
+  padding-top: 6rem;
+  padding-bottom: 7rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.65rem;
+  padding: 2rem;
+  border: 1px solid #dbe3ef;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0 18px 50px rgba(15,23,42,0.07);
+}
+
+.contact-form label {
+  margin-top: 0.5rem;
+  color: #111827;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.7rem;
+  padding: 0.85rem 1rem;
+  color: #111827;
+  font: inherit;
+  background: #f8fafc;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #2563eb;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 2rem;
+  color: #475569;
+}
+
+.contact-detail-icon {
+  color: #2563eb;
+}
+
+.contact-detail strong,
+.contact-detail a {
+  display: block;
+}
+
+.contact-detail a {
+  margin-top: 0.25rem;
+  color: #2563eb;
+}
+
+.form-success {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 0.65rem;
+  background: #ecfdf5;
+  color: #047857;
+  font-size: 0.9rem;
+}
+
+.page-footer {
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
+  color: #64748b;
+}
+
+.page-footer-inner {
+  min-height: 4rem;
+  font-size: 0.9rem;
+}
+
+.page-footer a {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .contact-page {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-top: 4rem;
+  }
+
+  .content-page {
+    padding-top: 4rem;
+  }
+
+  .page-footer-inner {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

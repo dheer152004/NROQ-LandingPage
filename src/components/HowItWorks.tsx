@@ -30,7 +30,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="steps-section">
+    <section id="how-it-works" className="steps-section">
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">How NROQ Works</h2>
