@@ -50,7 +50,7 @@ export default function App() {
       <Route path="/privacy-consent" element={<ContentPage {...pageContent.privacyConsent} />} />
       <Route path="/cookie-policy" element={<ContentPage {...pageContent.cookies} />} />
       <Route path="/contact" element={<ContactPage />} />
-      <Route path="*" element={<ContentPage {...pageContent.help} />} />
+      {/* <Route path="*" element={<ContentPage {...pageContent.help} />} /> */}
     </Routes>
   );
 }
