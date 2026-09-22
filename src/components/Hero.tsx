@@ -8,8 +8,8 @@ export default function Hero() {
         <div className="hero-layout">
           <div className="hero-copy">
             <div className="hero-badge">
-              <Star className="button-icon" />
-              Made for real conversations
+              {/* <Star className="button-icon" /> */}
+              {/* Made for real conversations */}
             </div>
             <h1 className="hero-title">
               From memes to <br className="hero-break" /> meetings. <br className="hero-break" />

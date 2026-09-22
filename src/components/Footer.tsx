@@ -1,20 +1,21 @@
 import { Instagram, Twitter, Youtube, Facebook, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import fullNameLogo from '../assets/fullnamelogo.svg';
 
 export default function Footer() {
   return (
     <footer className="footer-section">
       <div className="container footer-inner">
         <div className="footer-brand">
-          <div className="footer-logo">
+          {/* <div className="footer-logo">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 4H10V10H4V4Z" fill="currentColor"/>
               <path d="M4 14H10V20H4V14Z" fill="currentColor"/>
               <path d="M14 4H20V10H14V4Z" fill="currentColor"/>
               <path d="M14 14H20V20H14V14Z" fill="currentColor"/>
             </svg>
-          </div>
-          <span className="navbar-title">NROQ</span>
+          </div> */}
+          <img src={fullNameLogo} alt="NROQ logo" style={{ width: '120px', height: 'auto' }} />
           <p className="footer-brand-copy">Words that click.</p>
           <p className="footer-brand-copy">Knowledge that sticks.</p>
           <div className="footer-social">
