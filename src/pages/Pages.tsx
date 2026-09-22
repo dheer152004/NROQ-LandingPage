@@ -99,3 +99,20 @@ export function ContactPage() {
     </PageShell>
   );
 }
+
+export function NotFoundPage() {
+  return (
+    <PageShell>
+      <div className="container contact-page">
+        <div className="contact-copy">
+          <p className="page-eyebrow">404</p>
+          <h1 className="page-title">Page not found</h1>
+          <p className="page-intro">The page you’re looking for doesn’t exist or may have moved.</p>
+          <Link to="/" className="button-pill button-primary">
+            Back to home
+          </Link>
+        </div>
+      </div>
+    </PageShell>
+  );
+}

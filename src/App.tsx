@@ -13,7 +13,7 @@ import BottomCTA from './components/BottomCTA';
 import Logos from './components/Logos';
 import Footer from './components/Footer';
 import { Route, Routes } from 'react-router-dom';
-import { ContactPage, ContentPage } from './pages/Pages';
+import { ContactPage, ContentPage, NotFoundPage } from './pages/Pages';
 import { pageContent } from './pages/pageContent';
 
 function HomePage() {
@@ -50,7 +50,7 @@ export default function App() {
       <Route path="/privacy-consent" element={<ContentPage {...pageContent.privacyConsent} />} />
       <Route path="/cookie-policy" element={<ContentPage {...pageContent.cookies} />} />
       <Route path="/contact" element={<ContactPage />} />
-      {/* <Route path="*" element={<ContentPage {...pageContent.help} />} /> */}
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }
